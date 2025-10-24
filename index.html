@@ -1,281 +1,249 @@
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ornatus Interiores — Decoração e Revestimentos</title>
-  <meta name="description" content="Ornatus Interiores: cortinas, persianas, tapetes, carpetes, pisos laminados e vinílicos, rodapés e papéis de parede em Niterói (RJ). Tradição desde 1971.">
-  <style>
-    :root{
-      --bg:#faf8f6; --card:#ffffff; --text:#2b2b2b; --muted:#6b6b6b;
-      --brand:#8a5a44; --brand-2:#d9c7b8; --radius:14px; --shadow:0 8px 24px rgba(0,0,0,.08);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.5}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:1100px;margin:0 auto;padding:20px}
-
-    header{position:sticky;top:0;background:rgba(250,248,246,.9);backdrop-filter:saturate(150%) blur(8px);border-bottom:1px solid #eee;z-index:10}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .logo{display:flex;align-items:center;gap:12px}
-    .logo-badge{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#fff;font-weight:700;box-shadow:var(--shadow)}
-    .brand{font-weight:800;letter-spacing:.3px}
-    .cta{display:flex;gap:10px;flex-wrap:wrap}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--brand);color:#fff;font-weight:600;border:0;box-shadow:var(--shadow)}
-    .btn.alt{background:#fff;color:var(--brand);border:1px solid var(--brand-2)}
-
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;margin:28px 0}
-    .hero-card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
-    .hero h1{margin:0 0 10px;font-size:clamp(28px,5vw,42px)}
-    .hero p{margin:0 0 18px;color:var(--muted)}
-    .hero img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
-    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
-    .badge{background:#fff;border:1px solid #eee;color:#444;padding:6px 10px;border-radius:999px;font-size:12px}
-
-    section{margin:40px 0}
-    h2{font-size:clamp(22px,3.6vw,30px);margin:0 0 16px}
-
-    /* Galeria */
-    .grid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
-    figure.card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin:0}
-    .card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
-    figcaption{padding:10px 12px;color:#444;font-size:14px}
-
-    /* Sobre & Contato & Marcas */
-    .about,.contact,.brands{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
-    .contact-list{display:grid;gap:10px}
-    .contact-item{display:flex;gap:10px;align-items:flex-start}
-    .contact-item strong{min-width:110px}
-
-    .brand-logos{display:grid;gap:14px;grid-template-columns:repeat(5,1fr)}
-    .brand-logos .logo-card{background:#fff;border:1px solid #eee;border-radius:12px;display:grid;place-items:center;padding:12px;min-height:90px}
-    .brand-logos img{max-width:100%;max-height:56px;object-fit:contain}
-
-    footer{padding:30px 0;color:#888;text-align:center}
-
-    /* Lightbox */
-    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;align-items:center;justify-content:center;padding:20px}
-    .lightbox.open{display:flex}
-    .lightbox img{max-width:min(1100px,95vw);max-height:90vh;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
-    .lightbox .close{position:fixed;top:14px;right:16px;background:#fff;border-radius:10px;padding:8px 12px;font-weight:700;border:0;cursor:pointer}
-
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr;gap:14px}
-      .grid{grid-template-columns:1fr 1fr}
-      .brand-logos{grid-template-columns:repeat(3,1fr)}
-    }
-    @media (max-width:620px){
-      .grid{grid-template-columns:1fr}
-      .brand-logos{grid-template-columns:repeat(2,1fr)}
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ornatus Interiores — Decoração e Revestimentos</title>
+<meta name="description" content="Ornatus Interiores em Niterói (RJ): cortinas, persianas, tapetes, carpetes, pisos laminados e vinílicos, rodapés e papéis de parede. Tradição desde 1971.">
+<style>
+:root{
+  --bg:#fff8f3; --card:#ffffff; --text:#2a2a2a; --muted:#6b6b6b;
+  --brand:#E76B3B;   /* laranja do logo */
+  --brand-2:#6E3D2D; /* marrom do logo */
+  --radius:14px; --shadow:0 8px 24px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+header{position:sticky;top:0;background:rgba(255,248,243,.92);backdrop-filter:saturate(150%) blur(8px);border-bottom:1px solid #eee;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-img{height:48px;width:auto;border-radius:8px;box-shadow:var(--shadow)}
+.brand{font-weight:800;letter-spacing:.3px}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--brand);color:#fff;font-weight:600;border:0;box-shadow:var(--shadow)}
+.btn.alt{background:#fff;color:var(--brand);border:1px solid var(--brand-2)}
+.btn[href^="https://wa.me"]{background:#25D366;color:#fff}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;margin:28px 0}
+.hero-card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);border:2px solid rgba(110,61,45,.08)}
+.hero h1{margin:0 0 10px;font-size:clamp(28px,5vw,42px);color:var(--brand-2)}
+.hero p{margin:0 0 18px;color:var(--muted)}
+.hero img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.badge{background:#fff;border:1px solid #eee;color:#444;padding:6px 10px;border-radius:999px;font-size:12px}
+section{margin:40px 0}
+h2{font-size:clamp(22px,3.6vw,30px);margin:0 0 16px;color:var(--brand-2)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+figure.card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);margin:0;border:1px solid #f1e5df}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+figcaption{padding:10px 12px;color:#333;font-size:14px;font-weight:800;letter-spacing:.3px;text-transform:uppercase}
+.about,.contact,.brands{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;border:1px solid #f1e5df}
+.contact-list{display:grid;gap:10px}
+.contact-item{display:flex;gap:10px;align-items:flex-start}
+.contact-item strong{min-width:110px}
+.brand-logos{display:grid;gap:14px;grid-template-columns:repeat(5,1fr)}
+.logo-card{background:#fff;border:1px solid #eee;border-radius:12px;display:grid;place-items:center;padding:12px;min-height:90px}
+.logo-card img{max-width:100%;max-height:56px;object-fit:contain}
+footer{padding:30px 0;color:#888;text-align:center}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;align-items:center;justify-content:center;padding:20px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(1100px,95vw);max-height:90vh;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.lightbox .close{position:fixed;top:14px;right:16px;background:#fff;border-radius:10px;padding:8px 12px;font-weight:700;border:0;cursor:pointer}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:14px}
+  .grid{grid-template-columns:1fr 1fr}
+  .brand-logos{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:620px){
+  .grid{grid-template-columns:1fr}
+  .brand-logos{grid-template-columns:repeat(2,1fr)}
+}
+</style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="logo">
-        <div class="logo-badge">OI</div>
-        <div>
-          <div class="brand">Ornatus Interiores</div>
-          <small style="color:var(--muted)">Decoração • Cortinas • Pisos</small>
-        </div>
-      </div>
-      <div class="cta">
-        <a class="btn" href="https://wa.me/5521989357140" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn alt" href="mailto:contato.ornatus@gmail.com">Enviar e-mail</a>
+<header>
+  <div class="container nav">
+    <div class="logo">
+      <img class="logo-img" src="logos/ornatus-logo.jpeg" alt="Ornatus Interiores">
+      <div>
+        <div class="brand">Ornatus Interiores</div>
+        <small style="color:var(--muted)">Decoração • Cortinas • Pisos</small>
       </div>
     </div>
-  </header>
-
-  <main class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-card">
-        <h1>Bem-vindo(a) à Ornatus Interiores</h1>
-        <p>Desde 1971, transformando ambientes com cortinas, persianas, tapetes, carpetes, pisos laminados e vinílicos, rodapés e papéis de parede.</p>
-        <div class="badges">
-          <span class="badge">Tradição desde 1971</span>
-          <span class="badge">Custo-benefício e segurança</span>
-          <span class="badge">Atendimento personalizado</span>
-        </div>
-      </div>
-      <img src="IMG_6834.jpeg" alt="Cortina de tecido sob medida em pé-direito duplo">
-    </section>
-
-    <!-- SOBRE -->
-    <section class="about" aria-labelledby="sobre-title">
-      <h2 id="sobre-title">Nossa história</h2>
-      <p>
-        Desde 1971, a <strong>Ornatus Interiores</strong> atua no Rio de Janeiro, transformando ambientes e realizando a decoração de casas e apartamentos com tradição, bom custo-benefício e segurança.
-      </p>
-      <p>
-        Produtos: <strong>cortinas e persianas</strong> (motorizadas e manuais), <strong>carpetes, tapetes, pisos laminados e vinílicos</strong> e <strong>rodapés</strong> (madeira e poliestireno), além de <strong>papéis de parede</strong> nacionais e importados.
-      </p>
-    </section>
-
-    <!-- MARCAS -->
-    <section class="brands" aria-labelledby="brands-title">
-      <h2 id="brands-title">Marcas que trabalhamos</h2>
-      <p>
-        Pisos laminados: <strong>Durafloor, Eucafloor, QuickStep</strong> e <strong>Gabriel Persianas</strong>.<br>
-        Pisos vinílicos: <strong>Ecomex, Vinilforte, Biancogres, Durafloor</strong> e <strong>Eucafloor</strong>.<br>
-        Persianas: <strong>Gabriel Persianas</strong> e <strong>Kazza</strong>.<br>
-        Carpetes: <strong>São Carlos</strong> e <strong>Belgotex</strong>. Tapetes: <strong>São Carlos</strong>.<br>
-        Cortinas: <strong>Corttex</strong>. Papéis de parede: <strong>Bobinex</strong> (nacional) e <strong>importados</strong>.
-      </p>
-
-      <div class="brand-logos">
-        <!-- Laminados -->
-        <div class="logo-card" title="Durafloor (Laminados)"><img src="logos/durafloor.png" alt="Logo Durafloor"></div>
-        <div class="logo-card" title="Eucafloor (Laminados/Vinílicos)"><img src="logos/eucafloor.png" alt="Logo Eucafloor"></div>
-        <div class="logo-card" title="QuickStep (Laminados)"><img src="logos/quickstep.png" alt="Logo QuickStep"></div>
-        <div class="logo-card" title="Gabriel Persianas (Laminados*)"><img src="logos/gabriel-persianas.png" alt="Logo Gabriel Persianas"></div>
-        <!-- Vinílicos -->
-        <div class="logo-card" title="Ecomex (Vinílicos)"><img src="logos/ecomex.png" alt="Logo Ecomex"></div>
-        <div class="logo-card" title="Vinilforte (Vinílicos)"><img src="logos/vinilforte.png" alt="Logo Vinilforte"></div>
-        <div class="logo-card" title="Biancogres (Vinílicos)"><img src="logos/biancogres.png" alt="Logo Biancogres"></div>
-        <div class="logo-card" title="Durafloor (Vinílicos)"><img src="logos/durafloor-vinilico.png" alt="Logo Durafloor (Vinílicos)"></div>
-        <!-- Persianas -->
-        <div class="logo-card" title="Kazza (Persianas)"><img src="logos/kazza.png" alt="Logo Kazza"></div>
-        <div class="logo-card" title="Gabriel Persianas (Persianas)"><img src="logos/gabriel-persianas.png" alt="Logo Gabriel Persianas"></div>
-        <!-- Carpetes/Tapetes -->
-        <div class="logo-card" title="São Carlos (Carpetes e Tapetes)"><img src="logos/sao-carlos.png" alt="Logo São Carlos"></div>
-        <div class="logo-card" title="Belgotex (Carpetes)"><img src="logos/belgotex.png" alt="Logo Belgotex"></div>
-        <!-- Cortinas -->
-        <div class="logo-card" title="Corttex (Cortinas)"><img src="logos/corttex.png" alt="Logo Corttex"></div>
-        <!-- Papéis de parede -->
-        <div class="logo-card" title="Bobinex (Papéis de Parede)"><img src="logos/bobinex.png" alt="Logo Bobinex"></div>
-        <div class="logo-card" title="Importados (Papéis de Parede)"><img src="logos/importados.png" alt="Logo genérica para importados"></div>
-      </div>
-      <small style="color:var(--muted);display:block;margin-top:8px">*Caso não use Gabriel para laminados, podemos remover essa logo dessa categoria — mantive aqui conforme sua lista.</small>
-    </section>
-
-    <!-- GALERIA -->
-    <section aria-labelledby="galeria-title">
-      <h2 id="galeria-title">Trabalhos e Produtos</h2>
-      <div class="grid">
-        <figure class="card">
-          <img src="IMG_6834.jpeg" alt="Cortina de tecido sob medida — sala com pé-direito alto" data-full="IMG_6834.jpeg">
-          <figcaption>Cortina de tecido sob medida</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="4F8C14E7-79D4-4BFB-88E0-0772D36C0535.jpeg" alt="Persiana vertical branca em quarto" data-full="4F8C14E7-79D4-4BFB-88E0-0772D36C0535.jpeg">
-          <figcaption>Persiana vertical</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="145B949C-8DFE-4FAE-AB83-885775338673.jpeg" alt="Persianas rolo em varanda" data-full="145B949C-8DFE-4FAE-AB83-885775338673.jpeg">
-          <figcaption>Persiana rolo (rolô)</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="5E3AFA21-A53B-47DF-8F1E-94F7D09A8B9E.jpeg" alt="Piso vinílico amadeirado claro" data-full="5E3AFA21-A53B-47DF-8F1E-94F7D09A8B9E.jpeg">
-          <figcaption>Piso vinílico — tom claro</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="8F78DC33-520F-49F7-A55C-A19C8D26B83E.jpeg" alt="Piso vinílico amadeirado claro em varanda" data-full="8F78DC33-520F-49F7-A55C-A19C8D26B83E.jpeg">
-          <figcaption>Piso vinílico em varanda</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="E3E96A30-C021-40BB-92A9-15A89F22684D.jpeg" alt="Piso vinílico caramelo" data-full="E3E96A30-C021-40BB-92A9-15A89F22684D.jpeg">
-          <figcaption>Piso vinílico — tom caramelo</figcaption>
-        </figure>
-        <figure class="card">
-          <img src="1B665730-486D-4000-ADA0-7CC27949DB2D.jpeg" alt="Cortina romana bege" data-full="1B665730-486D-4000-ADA0-7CC27949DB2D.jpeg">
-          <figcaption>Cortina romana</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- CONTATOS + FORM -->
-    <section class="contact" aria-labelledby="contato-title">
-      <h2 id="contato-title">Contato</h2>
-      <div class="contact-list">
-        <div class="contact-item"><strong>Telefone 1:</strong><div><a href="tel:+5521989357140">(21) 98935-7140</a></div></div>
-        <div class="contact-item"><strong>Telefone 2:</strong><div><a href="tel:+552126193399">(21) 2619-3399</a></div></div>
-        <div class="contact-item"><strong>Telefone 3:</strong><div><a href="tel:+552126191015">(21) 2619-1015</a></div></div>
-        <div class="contact-item"><strong>WhatsApp:</strong><div><a href="https://wa.me/5521989357140" target="_blank" rel="noopener">(21) 98935-7140</a></div></div>
-        <div class="contact-item"><strong>E-mail:</strong><div><a href="mailto:contato.ornatus@gmail.com">contato.ornatus@gmail.com</a></div></div>
-        <div class="contact-item"><strong>Endereço:</strong>
-          <div>Estrada Francisco da Cruz Nunes, nº 7288, Loja 115<br>Itaipu — Niterói — Rio de Janeiro, Brasil</div>
-        </div>
-      </div>
-
-      <!-- Formulário básico (mailto) + fallback WhatsApp -->
-      <form id="contatoForm" style="margin-top:18px;display:grid;gap:10px" onsubmit="enviarFormulario(event)">
-        <div style="display:grid;gap:8px">
-          <label for="nome"><strong>Nome</strong></label>
-          <input id="nome" name="nome" type="text" required placeholder="Seu nome" style="padding:10px;border:1px solid #ddd;border-radius:10px">
-        </div>
-        <div style="display:grid;gap:8px">
-          <label for="email"><strong>E-mail</strong></label>
-          <input id="email" name="email" type="email" required placeholder="seu@email.com" style="padding:10px;border:1px solid #ddd;border-radius:10px">
-        </div>
-        <div style="display:grid;gap:8px">
-          <label for="mensagem"><strong>Mensagem</strong></label>
-          <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Como podemos ajudar?" style="padding:10px;border:1px solid #ddd;border-radius:10px"></textarea>
-        </div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap">
-          <button class="btn" type="submit">Enviar por e-mail</button>
-          <a class="btn alt" id="btnZap" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
-        </div>
-        <small style="color:var(--muted)">Ao clicar em “Enviar por e-mail”, seu aplicativo de e-mail será aberto com a mensagem preenchida.</small>
-      </form>
-
-      <div style="margin-top:16px">
-        <iframe class="map" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Estrada%20Francisco%20da%20Cruz%20Nunes%2C%207288%2C%20Loja%20115%2C%20Itaipu%2C%20Niter%C3%B3i%2C%20RJ&output=embed">
-        </iframe>
-      </div>
-    </section>
-  </main>
-
-  <footer class="container">
-    <small>© <span id="year"></span> Ornatus Interiores — Todos os direitos reservados.</small>
-  </footer>
-
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualização da imagem">
-    <button class="close" aria-label="Fechar">Fechar ✕</button>
-    <img alt="">
+    <div class="cta">
+      <a class="btn" href="https://wa.me/5521989357140" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn alt" href="mailto:contato.ornatus@gmail.com">Enviar e-mail</a>
+    </div>
   </div>
+</header>
 
-  <script>
-    // Ano no rodapé
-    document.getElementById('year').textContent = new Date().getFullYear();
+<main class="container">
+  <section class="hero">
+    <div class="hero-card">
+      <h1>Bem-vindo(a) à Ornatus Interiores</h1>
+      <p>Desde 1971, transformando ambientes com cortinas, persianas, tapetes, carpetes, pisos laminados e vinílicos, rodapés e papéis de parede.</p>
+      <div class="badges">
+        <span class="badge">Tradição desde 1971</span>
+        <span class="badge">Custo-benefício e segurança</span>
+        <span class="badge">Atendimento personalizado</span>
+      </div>
+    </div>
+    <img src="IMG_6834.jpeg" alt="Cortina de tecido sob medida em pé-direito duplo">
+  </section>
 
-    // Lightbox simples
-    const lb = document.getElementById('lightbox');
-    const lbImg = lb.querySelector('img');
-    const closeBtn = lb.querySelector('.close');
-    document.querySelectorAll('figure.card img').forEach(img => {
-      img.addEventListener('click', () => {
-        lbImg.src = img.getAttribute('data-full') || img.src;
-        lb.classList.add('open');
-      });
-    });
-    const close = () => lb.classList.remove('open');
-    closeBtn.addEventListener('click', close);
-    lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  <section class="about" aria-labelledby="sobre-title">
+    <h2 id="sobre-title">Nossa história</h2>
+    <p>Desde 1971, a <strong>Ornatus Interiores</strong> atua no Rio de Janeiro, transformando ambientes e realizando a decoração de casas e apartamentos com tradição, bom custo-benefício e segurança.</p>
+    <p>Produtos: <strong>cortinas e persianas</strong> (motorizadas e manuais), <strong>carpetes, tapetes, pisos laminados e vinílicos</strong> e <strong>rodapés</strong> (madeira e poliestireno), além de <strong>papéis de parede</strong> nacionais e importados.</p>
+  </section>
 
-    // Formulário: mailto + WhatsApp
-    function enviarFormulario(ev){
-      ev.preventDefault();
-      const nome = document.getElementById('nome').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const msg = document.getElementById('mensagem').value.trim();
-      const assunto = encodeURIComponent('Contato pelo site — Ornatus Interiores');
-      const corpo = encodeURIComponent(\`Nome: \${nome}\nE-mail: \${email}\n\nMensagem:\n\${msg}\`);
-      window.location.href = \`mailto:contato.ornatus@gmail.com?subject=\${assunto}&body=\${corpo}\`;
-    }
-    // Link dinâmico do WhatsApp com a mensagem do formulário
-    const btnZap = document.getElementById('btnZap');
-    document.getElementById('contatoForm').addEventListener('input', () => {
-      const nome = encodeURIComponent(document.getElementById('nome').value.trim());
-      const msg = encodeURIComponent(document.getElementById('mensagem').value.trim());
-      const texto = \`Olá! Sou \${nome}. \${msg ? 'Mensagem: ' + msg : ''}\`;
-      btnZap.href = \`https://wa.me/5521989357140?text=\${texto}\`;
-    });
-  </script>
+  <section class="brands" aria-labelledby="brands-title">
+    <h2 id="brands-title">Marcas que trabalhamos</h2>
+    <p>
+      Pisos laminados: <strong>Durafloor, Eucafloor, QuickStep</strong> e <strong>Gabriel Persianas</strong>.<br>
+      Pisos vinílicos: <strong>Ecomex, Vinilforte, Biancogres, Durafloor</strong> e <strong>Eucafloor</strong>.<br>
+      Persianas: <strong>Gabriel Persianas</strong> e <strong>Kazza</strong>.<br>
+      Carpetes: <strong>São Carlos</strong> e <strong>Belgotex</strong>. Tapetes: <strong>São Carlos</strong>.<br>
+      Cortinas: <strong>Corttex</strong>. Papéis de parede: <strong>Bobinex</strong> (nacional) e <strong>importados</strong>.
+    </p>
+    <div class="brand-logos">
+      <div class="logo-card" title="Durafloor"><img src="logos/durafloor.png" alt="Durafloor"></div>
+      <div class="logo-card" title="Eucafloor"><img src="logos/eucafloor.png" alt="Eucafloor"></div>
+      <div class="logo-card" title="QuickStep"><img src="logos/quickstep.png" alt="QuickStep"></div>
+      <div class="logo-card" title="Gabriel Persianas"><img src="logos/gabriel-persianas.png" alt="Gabriel Persianas"></div>
+      <div class="logo-card" title="Ecomex"><img src="logos/ecomex.png" alt="Ecomex"></div>
+      <div class="logo-card" title="Vinilforte"><img src="logos/vinilforte.png" alt="Vinilforte"></div>
+      <div class="logo-card" title="Biancogres"><img src="logos/biancogres.png" alt="Biancogres"></div>
+      <div class="logo-card" title="Durafloor (Vinílico)"><img src="logos/durafloor-vinilico.png" alt="Durafloor (Vinílico)"></div>
+      <div class="logo-card" title="Kazza"><img src="logos/kazza.png" alt="Kazza"></div>
+      <div class="logo-card" title="São Carlos"><img src="logos/sao-carlos.png" alt="São Carlos"></div>
+      <div class="logo-card" title="Belgotex"><img src="logos/belgotex.png" alt="Belgotex"></div>
+      <div class="logo-card" title="Corttex"><img src="logos/corttex.png" alt="Corttex"></div>
+      <div class="logo-card" title="Bobinex"><img src="logos/bobinex.png" alt="Bobinex"></div>
+      <div class="logo-card" title="Importados"><img src="logos/importados.png" alt="Importados"></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="galeria-title">
+    <h2 id="galeria-title">Trabalhos e Produtos</h2>
+    <div class="grid">
+      <figure class="card">
+        <img src="IMG_6834.jpeg" alt="Cortina de tecido sob medida — sala com pé-direito alto" data-full="IMG_6834.jpeg">
+        <figcaption>CORTINA DE TECIDO SOB MEDIDA</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="4F8C14E7-79D4-4BFB-88E0-0772D36C0535.jpeg" alt="Persiana vertical branca em quarto" data-full="4F8C14E7-79D4-4BFB-88E0-0772D36C0535.jpeg">
+        <figcaption>PERSIANA VERTICAL</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="145B949C-8DFE-4FAE-AB83-885775338673.jpeg" alt="Persianas rolo em varanda" data-full="145B949C-8DFE-4FAE-AB83-885775338673.jpeg">
+        <figcaption>PERSIANA ROLO (ROLÔ)</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="5E3AFA21-A53B-47DF-8F1E-94F7D09A8B9E.jpeg" alt="Piso vinílico amadeirado claro" data-full="5E3AFA21-A53B-47DF-8F1E-94F7D09A8B9E.jpeg">
+        <figcaption>PISO VINÍLICO — TOM CLARO</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="8F78DC33-520F-49F7-A55C-A19C8D26B83E.jpeg" alt="Piso vinílico amadeirado claro em varanda" data-full="8F78DC33-520F-49F7-A55C-A19C8D26B83E.jpeg">
+        <figcaption>PISO VINÍLICO EM VARANDA</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="E3E96A30-C021-40BB-92A9-15A89F22684D.jpeg" alt="Piso vinílico caramelo" data-full="E3E96A30-C021-40BB-92A9-15A89F22684D.jpeg">
+        <figcaption>PISO VINÍLICO — TOM CARAMELO</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="1B665730-486D-4000-ADA0-7CC27949DB2D.jpeg" alt="Cortina romana bege" data-full="1B665730-486D-4000-ADA0-7CC27949DB2D.jpeg">
+        <figcaption>CORTINA ROMANA</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="contato-title">
+    <h2 id="contato-title">Contato</h2>
+    <div class="contact-list">
+      <div class="contact-item"><strong>Telefone 1:</strong><div><a href="tel:+5521989357140">(21) 98935-7140</a></div></div>
+      <div class="contact-item"><strong>Telefone 2:</strong><div><a href="tel:+552126193399">(21) 2619-3399</a></div></div>
+      <div class="contact-item"><strong>Telefone 3:</strong><div><a href="tel:+552126191015">(21) 2619-1015</a></div></div>
+      <div class="contact-item"><strong>WhatsApp:</strong><div><a href="https://wa.me/5521989357140" target="_blank" rel="noopener">(21) 98935-7140</a></div></div>
+      <div class="contact-item"><strong>E-mail:</strong><div><a href="mailto:contato.ornatus@gmail.com">contato.ornatus@gmail.com</a></div></div>
+      <div class="contact-item"><strong>Endereço:</strong>
+        <div>Estrada Francisco da Cruz Nunes, nº 7288, Loja 115<br>Itaipu — Niterói — Rio de Janeiro, Brasil</div>
+      </div>
+    </div>
+
+    <form id="contatoForm" style="margin-top:18px;display:grid;gap:10px" onsubmit="enviarFormulario(event)">
+      <div style="display:grid;gap:8px">
+        <label for="nome"><strong>Nome</strong></label>
+        <input id="nome" name="nome" type="text" required placeholder="Seu nome" style="padding:10px;border:1px solid #ddd;border-radius:10px">
+      </div>
+      <div style="display:grid;gap:8px">
+        <label for="email"><strong>E-mail</strong></label>
+        <input id="email" name="email" type="email" required placeholder="seu@email.com" style="padding:10px;border:1px solid #ddd;border-radius:10px">
+      </div>
+      <div style="display:grid;gap:8px">
+        <label for="mensagem"><strong>Mensagem</strong></label>
+        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Como podemos ajudar?" style="padding:10px;border:1px solid #ddd;border-radius:10px"></textarea>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn" type="submit">Enviar por e-mail</button>
+        <a class="btn alt" id="btnZap" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+      </div>
+      <small style="color:var(--muted)">Ao clicar em “Enviar por e-mail”, seu aplicativo de e-mail será aberto com a mensagem preenchida.</small>
+    </form>
+
+    <div style="margin-top:16px">
+      <iframe class="map" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Estrada%20Francisco%20da%20Cruz%20Nunes%2C%207288%2C%20Loja%20115%2C%20Itaipu%2C%20Niter%C3%B3i%2C%20RJ&output=embed">
+      </iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="container">
+  <small>© <span id="year"></span> Ornatus Interiores — Todos os direitos reservados.</small>
+</footer>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualização da imagem">
+  <button class="close" aria-label="Fechar">Fechar ✕</button>
+  <img alt="">
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+// Lightbox
+const lb = document.getElementById('lightbox');
+const lbImg = lb.querySelector('img');
+const closeBtn = lb.querySelector('.close');
+document.querySelectorAll('figure.card img').forEach(img => {
+  img.addEventListener('click', () => {
+    lbImg.src = img.getAttribute('data-full') || img.src;
+    lb.classList.add('open');
+  });
+});
+const close = () => lb.classList.remove('open');
+closeBtn.addEventListener('click', close);
+lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+// Formulário: mailto + WhatsApp
+function enviarFormulario(ev){
+  ev.preventDefault();
+  const nome = document.getElementById('nome').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const msg = document.getElementById('mensagem').value.trim();
+  const assunto = encodeURIComponent('Contato pelo site — Ornatus Interiores');
+  const corpo = encodeURIComponent(`Nome: ${nome}\nE-mail: ${email}\n\nMensagem:\n${msg}`);
+  window.location.href = `mailto:contato.ornatus@gmail.com?subject=${assunto}&body=${corpo}`;
+}
+const btnZap = document.getElementById('btnZap');
+document.getElementById('contatoForm').addEventListener('input', () => {
+  const nome = encodeURIComponent(document.getElementById('nome').value.trim());
+  const msg = encodeURIComponent(document.getElementById('mensagem').value.trim());
+  const texto = `Olá! Sou ${nome}. ${msg ? 'Mensagem: ' + msg : ''}`;
+  btnZap.href = `https://wa.me/5521989357140?text=${texto}`;
+});
+</script>
 </body>
 </html>
